@@ -26,7 +26,7 @@ func TestNew(t *testing.T) {
 	require.Equal(t, 42, c.GetInt("foo"))
 }
 
-func ExampleParser() {
+func ExampleNew() {
 	if err := os.Setenv(envName, "42"); err != nil {
 		panic(err)
 	}
