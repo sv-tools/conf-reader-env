@@ -5,7 +5,7 @@
 [![codecov](https://codecov.io/gh/sv-tools/conf-reader-env/branch/main/graph/badge.svg?token=0XVOTDR1CW)](https://codecov.io/gh/sv-tools/conf-reader-env)
 [![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/sv-tools/conf-reader-env?style=flat)](https://github.com/sv-tools/conf-reader-env/releases)
 
-The template for new go repositories
+The [conf](https://github.com/sv-tools/conf) reader for Environment Variables.
 
 
 ## License
