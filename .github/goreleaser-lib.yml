@@ -1,9 +1,9 @@
-project_name: go-repo-template
+project_name: conf-reader-env
 
 release:
   github:
     owner: sv-tools
-    name: go-repo-template
+    name: conf-reader-env
 
 builds:
   - skip: true
