@@ -7,7 +7,6 @@
 
 The [conf](https://github.com/sv-tools/conf) reader for Environment Variables.
 
-
 ## License
 
 MIT licensed. See the bundled [LICENSE](LICENSE) file for more details.
