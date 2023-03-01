@@ -28,8 +28,9 @@ func (r *envReader) Read(ctx context.Context) (interface{}, error) {
 }
 
 // New creates the Env reader
-//   `mapEnvKey` is a map of the names of the environment variables and the configuration keys
-//   `prefix` is a default prefix that will be added to all configuration keys
+//
+//	`mapEnvKey` is a map of the names of the environment variables and the configuration keys
+//	`prefix` is a default prefix that will be added to all configuration keys
 func New(mapEnvKey map[string]string, prefix string) conf.Reader {
 	return &envReader{
 		mapEnvKey: mapEnvKey,
