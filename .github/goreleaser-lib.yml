@@ -1,9 +1,0 @@
-project_name: conf-reader-env
-
-release:
-  github:
-    owner: sv-tools
-    name: conf-reader-env
-
-builds:
-  - skip: true
