@@ -15,13 +15,10 @@ import (
 const envName = "TEST_FOO"
 
 func TestNew(t *testing.T) {
-	t.Cleanup(func() {
-		require.NoError(t, os.Unsetenv(envName))
-	})
-	require.NoError(t, os.Setenv(envName, "42"))
+	t.Setenv(envName, "42")
 
 	c := conf.New().WithReaders(confenv.New(map[string]string{envName: "foo"}, ""))
-	require.NoError(t, c.Load(context.Background()))
+	require.NoError(t, c.Load(t.Context()))
 
 	require.Equal(t, 42, c.GetInt("foo"))
 }
