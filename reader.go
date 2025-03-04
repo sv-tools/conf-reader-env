@@ -16,7 +16,7 @@ func (r *envReader) Prefix() string {
 	return r.prefix
 }
 
-func (r *envReader) Read(ctx context.Context) (interface{}, error) {
+func (r *envReader) Read(ctx context.Context) (any, error) {
 	res := map[string]string{}
 	for env, key := range r.mapEnvKey {
 		if value, ok := os.LookupEnv(env); ok {
