@@ -16,7 +16,7 @@ func (r *envReader) Prefix() string {
 	return r.prefix
 }
 
-func (r *envReader) Read(ctx context.Context) (any, error) {
+func (r *envReader) Read(_ context.Context) (any, error) {
 	res := map[string]string{}
 	for env, key := range r.mapEnvKey {
 		if value, ok := os.LookupEnv(env); ok {
@@ -24,7 +24,7 @@ func (r *envReader) Read(ctx context.Context) (any, error) {
 		}
 	}
 
-	return res, ctx.Err()
+	return res, nil
 }
 
 // New creates the Env reader
